@@ -6,25 +6,19 @@
 	font-weight: normal;
 	font-style: normal;
 }
-* {
-    margin: 0;
-    padding: 0;
-}
+
 body {
     font-family: "Arial";
     font-weight: 400;
-}
-.container {
     max-width: 1280px;
     margin: 0 auto;
 }
-.container-center {
-    max-width: 1180px;
-    margin: 0 auto;
+.padding-site {
+    padding: 50px;
 }
-.text-h2 {
-    text-align: center;
-    padding: 50px 0 0 0;
+.text-span {
+    display: flex;
+    justify-content: center;
     color: #445161;
     font-size: 30px;
     line-height: 36px;
@@ -35,12 +29,11 @@ p {
     line-height: 24px;
 }
 .header {
+    width: 100%;
     background-color: #445162;
-}
-.header_body {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0 0 0;
+    box-sizing: border-box;
 }
 .header_text span {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
@@ -52,48 +45,104 @@ p {
     color: #ffffff;
     font-size: 20px;
     line-height: 36px;
-    margin: 51px 0 51px 20px;
     list-style-image: url(/img/icons/check_icon.png);
+    margin: 35px 0 0 0;
 }
 .about {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0 0 0;
 }
-.about_text h2 {
+.about_text span {
     color: #445161;
     font-size: 30px;
     line-height: 36px;
 }
 .about_text p {
-    max-width: 649px;
-    margin: 30px 0 0 0;
-
-}
-.about_text p:last-child {
     max-width: 653px;
-    margin: 20px 0 0 0;
-
 }
-.about_img {
-    margin: 0 0 50px 0;
-}
-.pluses{
+.pluses {
     background-color: #f5f5f5;
+    position: relative;
 }
-.pluses_rows {
+.pluses_wrp {
     display: flex;
+    justify-content: space-between;
 }
-.pluses_colls {
-    padding: 0 0 51px 0;
+.pluses summary {
+    max-width: 526px;
+    margin: 29px 0 0 41px;
 }
-.pluses_text {
+.pluses p {
+    max-width: 526px;
+}
+summary::-webkit-details-marker {
+    display: none
+}
+summary:after {
+    background: #445161;
+    content: "+";
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: -55px 0 0 -40px;
+}
+details[open] summary:after {
+    content: "-";
+}
+.screenshots_wrp {
+    display: flex;
+    justify-content: space-between;
+}
+.screenshots figure {
     display: flex;
     margin: 35px 0 0 0;
 }
-.pluses_text p {
-    max-width: 556px;
+.screenshots span {
+    color: #445161;
+    font-size: 24px;
+    line-height: 30px;
+    margin:  0 0 0 15px;
 }
-.pluses_icon {
-    margin: 5px 9px 0 0;
+.screenshots p {
+    max-width: 360px;
+    margin: 15px 0 0 15px;
+}
+.reviews {
+    background-color: #f5f5f5;
+}
+.reviews_wrp {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews figure {
+    display: flex;
+    margin: 35px 0 0 0;
+}
+.reviews p {
+    background-color: #ebebeb;
+    max-width: 436px;
+    margin: 0 0 15px 16px;
+    font-family: "Arial - Italic";
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.reviews p:after {
+    content: ''; 
+    position: absolute;
+    left: -20px;
+    bottom: 70px;
+    border: 10px solid transparent;
+    border-right: 10px solid #ebebeb;
+   }
+
+.reviews_itm span {
+    color: #989898;
+    font-size: 14px;
+    line-height: 18px;
 }
