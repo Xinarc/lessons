@@ -146,3 +146,64 @@ details[open] summary:after {
     font-size: 14px;
     line-height: 18px;
 }
+.buy_wrp {
+    display: flex;
+    justify-content: center;
+    margin: 29px 0 0 0;
+}
+.buy_wrp section:nth-child(2) {
+    margin: 0 45px;
+    height: 100%;
+    align-self: flex-end;
+}
+.buy_wrp section:nth-child(1) {
+    height: 100%;
+    align-self: flex-end;
+}
+.buy_itm {
+    border: 2px solid #445162;
+    border-radius: 5px;
+    width: 300px;
+}
+.buy_itm h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 52px;
+    background-color: #445162;
+    text-align: center;
+}
+.buy_itm p {
+    text-align: center;
+    color: #445162;
+    font-size: 40px;
+    line-height: 66px;
+    margin: 0;
+}
+.buy_itm ol {
+    background-color: #445162;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 19px;
+    margin: 0;
+}
+.buy_btn {
+    background-color: #445162;
+    text-align: center;
+    padding: 20px;
+}
+.buy_itm a {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 13px 112px;
+    border-radius: 5px;
+    color: #445161;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.buy_itm a:hover {
+    background-color: #ebebeb;
+}
