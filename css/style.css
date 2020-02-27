@@ -59,6 +59,10 @@ p {
 }
 .about_text p {
     max-width: 653px;
+    margin: 0;
+}
+.about_text p:nth-child(2){
+    margin: 30px 0 20px 0;
 }
 .pluses {
     background-color: #f5f5f5;
@@ -100,15 +104,16 @@ details[open] summary:after {
     display: flex;
     margin: 35px 0 0 0;
 }
+.screenshots img {
+    margin: 0 15px 0 0;
+}
 .screenshots span {
     color: #445161;
     font-size: 24px;
     line-height: 30px;
-    margin:  0 0 0 15px;
 }
 .screenshots p {
     max-width: 360px;
-    margin: 15px 0 0 15px;
 }
 .reviews {
     background-color: #f5f5f5;
@@ -164,6 +169,7 @@ details[open] summary:after {
     border: 2px solid #445162;
     border-radius: 5px;
     width: 300px;
+    text-align: center;
 }
 .buy_itm h3 {
     margin: 0;
@@ -173,8 +179,7 @@ details[open] summary:after {
     background-color: #445162;
     text-align: center;
 }
-.buy_itm p {
-    text-align: center;
+.buy_itm span {
     color: #445162;
     font-size: 40px;
     line-height: 66px;
@@ -185,25 +190,93 @@ details[open] summary:after {
     color: #ffffff;
     font-size: 14px;
     line-height: 24px;
-    padding-top: 19px;
+    padding: 19px 0 19px 40px;
     margin: 0;
+    text-align: left;
 }
-.buy_btn {
-    background-color: #445162;
-    text-align: center;
-    padding: 20px;
-}
+
 .buy_itm a {
     background-color: #fff;
     text-decoration: none;
-    padding: 13px 112px;
     border-radius: 5px;
     color: #445161;
     font-size: 13px;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 40px;
     text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 260px;
 }
 .buy_itm a:hover {
     background-color: #ebebeb;
 }
+.footer {
+    background-color: #445162;
+}
+.footer span {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    display: block;
+    text-align: center;
+    padding: 50px 0 31px 0;
+}
+.footer_wrp {
+    display: flex;
+    justify-content: center;
+}
+.footer_field {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.footer_text {
+    background-color: #fff;
+    width: 500px;
+    margin-bottom: 21px;
+    border-radius: 5px;
+    border: none;
+    padding: 14px 0 14px 10px;
+} 
+input, textarea::-webkit-input-placeholder {
+    color: #445162;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+input, textarea:-moz-placeholder {
+    color: #445162;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.footer_btn {
+    color: #445162;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0 48px;
+    border: none;
+    margin: 0 0 50px 0;
+}
+.footer_btn:hover {
+    background-color: #ebebeb;
+}
+.footer ul {
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.skype {
+    list-style-image: url(img/icons/skype_icon.png);
+}
+
